@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>OurServices - Flower Store</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+</head>
+<body style="background-image:url('images/bg2.png'); background-size:cover;">
+
+<!-- 🌸 NAVBAR START -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="index.html">🌸 FlowerStore</a>
+
+        <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="products.html">Products</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" href="services.html">Services</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+            <!-- Right side -->
+            <div class="d-flex align-items-center">
+                <button id="navSignInBtn" class="btn btn-light me-3" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#loginModal">
+                    Sign In
+                </button>
+                <a href="cart.html" class="text-white fs-5">🛒</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- 🌸 NAVBAR END -->
+
+<!-- SERVICES CONTENT -->
+<div class="container mt-5">
+    <h2 class="text-center mb-5 fw-bold">Our Services 💐</h2>
+
+    <div class="row g-4">
+
+        <!-- Service 1 -->
+        <div class="col-md-3">
+            <div class="card shadow h-100">
+                <img src="https://img.freepik.com/premium-photo/man-by-truck-guy-delivery-uniform_951586-51182.jpg" class="card-img-top" alt="Delivery">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Same Day Delivery</h5>
+                    <p class="card-text">
+                        Fast and reliable flower delivery on the same day.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="col-md-3">
+            <div class="card shadow h-100">
+                <img src="https://florster.co/cdn/shop/products/small-size-bouquet.jpg?v=1668465050&width=720" class="card-img-top" alt="Custom Bouquet">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Custom Bouquets</h5>
+                    <p class="card-text">
+                        Design beautiful bouquets for your loved ones.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="col-md-3">
+            <div class="card shadow h-100">
+                <img src="https://prairiehive.com/wp-content/uploads/2023/11/romantic-wedding-decor-ceiling-lights.jpg" class="card-img-top" alt="Wedding">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Wedding Decorations</h5>
+                    <p class="card-text">
+                        Elegant floral decorations for your dream wedding.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="col-md-3">
+            <div class="card shadow h-100">
+                <img src="https://officechristmas.co.uk/uploads/images/venue/live/2896/UE-%E2%80%93-Old-Billingsgate-Christmas-Party-thumbnail.webp" class="card-img-top" alt="Event">
+                <div class="card-body text-center">
+                    <h5 class="card-title">Event Arrangements</h5>
+                    <p class="card-text">
+                        Perfect flower arrangements for parties and events.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- LOGIN MODAL -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Sign In</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label>Name</label>
+            <input type="text" id="userName" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label>Email</label>
+            <input type="email" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label>Password</label>
+            <input type="password" class="form-control" required>
+          </div>
+          <button class="btn btn-danger w-100">Login</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<footer class="footer bg-dark text-white pt-5 pb-3">
+<div class="container">
+<div class="row">
+
+<!-- About -->
+<div class="col-md-3 mb-4">
+<h5 class="fw-bold">🌸 FlowerStore</h5>
+<p>Your one-stop online shop for fresh flowers and gifts. Brighten your day with our beautiful blooms!</p>
+</div>
+
+<!-- Contact -->
+<div class="col-md-3 mb-4">
+<h5 class="fw-bold">Contact Us</h5>
+<p>Email: support@flowerstore.com</p>
+<p>Phone: +94 123 456 789</p>
+<p>Address: Colombo, Sri Lanka</p>
+</div>
+
+<!-- Social Media -->
+<div class="col-md-3 mb-4">
+<h5 class="fw-bold">Follow Us</h5>
+<a href="#" class="text-white me-3 fs-4"><i class="bi bi-facebook"></i></a>
+<a href="#" class="text-white me-3 fs-4"><i class="bi bi-instagram"></i></a>
+<a href="#" class="text-white me-3 fs-4"><i class="bi bi-twitter"></i></a>
+<a href="#" class="text-white fs-4"><i class="bi bi-youtube"></i></a>
+</div>
+
+<!-- Location (Last Column) -->
+<div class="col-md-3 mb-4">
+<h5 class="fw-bold">Our Location</h5>
+<p>FlowerStore</p>
+<p>Main Flower Market</p>
+<p>Colombo, Sri Lanka</p>
+<p>Open: 8.00 AM – 8.00 PM</p>
+</div>
+
+</div>
+
+<!-- Bottom -->
+<div class="text-center pt-3 border-top border-secondary mt-3">
+© 2026 FlowerStore. All Rights Reserved.
+</div>
+
+</div>
+</footer>
+
+<!-- Bootstrap JS bundle for modal -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Universal Sign In / Hello! Name JS -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const navBtn = document.getElementById("navSignInBtn");
+
+    function updateNavbar() {
+        const userName = localStorage.getItem("userName");
+        if(userName) {
+            navBtn.innerText = `Hello! ${userName} | Sign Out`;
+            navBtn.classList.remove("btn-light");
+            navBtn.classList.add("btn-success");
+            navBtn.style.backgroundColor = "#28a745"; // green
+            navBtn.style.color = "#fff";
+            navBtn.removeAttribute("data-bs-toggle");
+            navBtn.removeAttribute("data-bs-target");
+
+            // Sign out on click
+            navBtn.onclick = function() {
+                localStorage.removeItem("userName");
+                location.reload(); // refresh page to reset navbar
+            }
+        } else {
+            navBtn.innerText = "Sign In";
+            navBtn.classList.remove("btn-success");
+            navBtn.classList.add("btn-light");
+            navBtn.style.backgroundColor = "";
+            navBtn.style.color = "";
+            navBtn.setAttribute("data-bs-toggle", "modal");
+            navBtn.setAttribute("data-bs-target", "#loginModal");
+            navBtn.onclick = null;
+        }
+    }
+
+    // Initial load
+    updateNavbar();
+
+    // Handle login form submit
+    const loginForm = document.getElementById("loginForm");
+    if(loginForm) {
+        loginForm.addEventListener("submit", function(e) {
+            e.preventDefault();
+            const name = document.getElementById("userName").value;
+            localStorage.setItem("userName", name);
+            updateNavbar();
+
+            // Close modal
+            const modalEl = document.getElementById('loginModal');
+            const modal = bootstrap.Modal.getInstance(modalEl);
+            modal.hide();
+        });
+    }
+});
+</script>
+
+</body>
+</html>
